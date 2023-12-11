@@ -17,9 +17,9 @@ p {
 .banner {
     height: 605px;
     width: 100%;
-    background-image: url(images/banner.png);
     border-bottom: 2px solid #1572B7;
-    background-color: #000000;
+    background-image:  url(images/banner.png), linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(49, 168, 221, .3) 50%, rgba(0, 0, 0, 1) 100%);
+    background-size: cover;
 }
 
 .logo {
@@ -74,29 +74,80 @@ button {
     height: 605px;
 }
 
+h2 {
+    color: #33A8DB;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#course-content p {
+    width: 792px;
+    height: 38px;
+}
+
+.module {
+    background: #252525;
+    width: 535px;
+    height: 51px;
+    border-radius: 51px;
+    border: 1px solid #33A8DB;
+    margin-top: 20px;   
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.module span {
+    color: #33A8DB
+}
+
 #transform-world {
     height: 363px;
     background-image: url(images/woman-code.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #professional-challenges {
     height: 850px;
     background: #000000;
+}
 
+#professional-challenges p {
+    width: 792px;
+    height: 76px;
 }
 
 footer {
     border-top: 3px solid #1572B7;
     width: 100%;
     height: 170px;
-    background: linear-gradient(#000000, #3BA1CD);
+    background: linear-gradient(#000000, rgba(59, 161, 205, .8));
+    font-size: 16px;
+}
+footer p a{
+    text-decoration: none;
+    color: #33A8DB;
 }
 
-
 .banner-content,
-footer {
+footer,
+#professional-challenges,
+.banner,
+#course-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+#professional-challenges p,
+#course-content p,
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
